@@ -1,5 +1,7 @@
 <script setup>
-
+  defineProps({
+    joke: Object
+  })
 </script>
 
 <template>
@@ -8,8 +10,8 @@
       <span>add to my collection btn goes here</span>
     </div>
     <div class="single-joke-card__body">
-      <span class="single-joke-card__setup">setup goes here</span>
-      <span class="single-joke-card__punchline">punchline goes here</span>
+      <span class="single-joke-card__setup">{{ joke?.setup }}</span>
+      <span class="single-joke-card__punchline">{{ joke?.punchline }}</span>
     </div>
   </div>
 </template>
