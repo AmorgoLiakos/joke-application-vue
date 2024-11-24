@@ -1,0 +1,28 @@
+.jokes {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &__type-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      border: none;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+      &.active {
+        color: green;
+        background-color: lightgrey;
+        font-size: 2rem;
+      }
+    }
+  }
+}
