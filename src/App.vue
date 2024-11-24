@@ -1,5 +1,5 @@
 <script setup>
-import Jokes from "@/components/Jokes.vue";
+  import Jokes from "@/components/Jokes/Jokes.vue";
 </script>
 
 <template>
