@@ -37,5 +37,5 @@
 </template>
 
 <style scoped lang="scss">
-  @import "joke-card.scss";
+  @use "joke-card.scss";
 </style>

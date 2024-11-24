@@ -51,5 +51,5 @@ onMounted( () => {
 </template>
 
 <style scoped lang="scss">
-  @import "jokes.scss";
+  @use "jokes.scss";
 </style>
