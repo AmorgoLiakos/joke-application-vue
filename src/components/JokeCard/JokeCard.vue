@@ -30,7 +30,7 @@
         <span v-if="showBody" class="single-joke-card__setup">{{ joke?.setup }}</span>
       </transition>
       <transition name="fade-punchline">
-      <span v-if="showBody" class="single-joke-card__punchline">{{ joke?.punchline }}</span>
+        <span v-if="showBody" class="single-joke-card__punchline">{{ joke?.punchline }}</span>
       </transition>
     </div>
   </div>
