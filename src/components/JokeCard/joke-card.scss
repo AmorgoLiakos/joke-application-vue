@@ -1,0 +1,59 @@
+.single-joke-card {
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  width: calc((100% / 4) - 3rem);
+  &.programming {
+    background-color: olive;
+  }
+  &__collection-btn {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+    &.in-collection {
+      path {
+        fill: #000;
+      }
+    }
+  }
+  &__head {
+    margin-bottom: 0.5rem;
+    text-align: end;
+  }
+  &__body {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    span {
+      &:first-child {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.fade-setup-enter-from {
+  opacity: 0;
+}
+.fade-setup-enter-to {
+  opacity: 1;
+}
+.fade-setup-enter-active {
+  transition: opacity 0.7s ease;
+}
+.fade-punchline-enter-from {
+  opacity: 0;
+}
+.fade-punchline-enter-to {
+  opacity: 1;
+}
+.fade-punchline-enter-active {
+  transition: opacity 1.7s ease;
+}
