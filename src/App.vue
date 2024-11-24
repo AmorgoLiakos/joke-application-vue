@@ -1,11 +1,16 @@
 <script setup>
-  import Jokes from "@/components/Jokes/Jokes.vue";
+
 </script>
 
 <template>
   <div class="app">
     <h1 class="app__title">Jokes Application</h1>
   </div>
+  <div class="app__nav">
+    <router-link to="/">Homepage</router-link>
+    <router-link to="/collection">Collection</router-link>
+  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped lang="scss">
@@ -33,4 +38,5 @@
       }
     }
   }
+}
 </style>
