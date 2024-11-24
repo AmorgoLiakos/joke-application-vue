@@ -1,5 +1,5 @@
 <script setup>
-  import {toggleCollection} from "@/composables/toggleCollection.js";
+  import {toggleJokeFromCollection} from "@/composables/toggleJokeFromCollection.js";
   import Heart from "@/assets/Icons/Heart.vue";
   import HeartInCollection from "@/assets/Icons/HeartInCollection.vue";
   import {onMounted, ref} from "vue";
@@ -20,7 +20,7 @@
 <template>
   <div class="single-joke-card" :class="{programming: joke?.type === 'programming'}">
     <div class="single-joke-card__head">
-      <span class="single-joke-card__collection-btn" @click="toggleCollection(joke?.id)">
+      <span class="single-joke-card__collection-btn" @click="toggleJokeFromCollection(joke?.id)">
         <HeartInCollection v-if="inCollection" />
         <Heart v-else />
       </span>

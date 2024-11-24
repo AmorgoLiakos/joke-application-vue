@@ -1,6 +1,6 @@
 import {fetchData} from "@/composables/fetchData.js";
 
-export const toggleCollection =  async (jokeID) => {
+export const toggleJokeFromCollection =  async (jokeID) => {
     let currentJoke = await fetchData('https://official-joke-api.appspot.com/jokes/'+jokeID);
     let currentCollection = localStorage.getItem('myCollection') || '[]'
     let currentCollectionParsed = JSON.parse(currentCollection);
