@@ -19,8 +19,8 @@
         margin-right: 0.5rem;
       }
       &.active {
-        color: green;
-        background-color: lightgrey;
+        color: var(--grey);
+        background-color: var(--primary-color);
         font-size: 2rem;
       }
     }

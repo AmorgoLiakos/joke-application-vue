@@ -1,10 +1,10 @@
 .single-joke-card {
   padding: 1rem;
-  border: 1px solid #000;
+  border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
   width: calc((100% / 4) - 3rem);
   &.programming {
-    background-color: olive;
+    background-color: var(--secondary-color);
   }
   &__collection-btn {
     display: inline-flex;
@@ -15,7 +15,7 @@
     border-radius: 5px;
     &.in-collection {
       path {
-        fill: #000;
+        fill: var(--accent);
       }
     }
   }
@@ -26,7 +26,7 @@
   &__body {
     padding: 1rem;
     border-radius: 0.3rem;
-    background-color: lightgray;
+    background-color: var(--grey);
     display: flex;
     flex-direction: column;
     span {
