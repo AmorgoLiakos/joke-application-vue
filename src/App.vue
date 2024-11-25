@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -17,7 +16,7 @@
 .app {
   &__title {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   &__nav {
@@ -28,13 +27,13 @@
     a {
       font-size: 1.2rem;
       text-decoration: none;
-      color: var(--primary-color);
+      color: var(--grey);
       cursor: pointer;
       &:hover {
-        color: var(--accent);
+        color: var(--secondary-color);
       }
       &.router-link-active {
-        color: var(--accent);
+        color: var(--secondary-color);
       }
     }
   }

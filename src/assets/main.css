@@ -5,4 +5,9 @@
     --white: #ffffff;
     --black: #000000;
     --grey: #ededed;
+    --grey-dark: #979797;
+    --red: #f44336;
+}
+html {
+    background-color: var(--primary-color);
 }

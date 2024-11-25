@@ -13,6 +13,6 @@
 </template>
 <style scoped lang="scss">
 svg {
-  fill: var(--accent);
+  fill: var(--red);
 }
 </style>
