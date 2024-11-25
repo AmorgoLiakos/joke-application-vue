@@ -1,8 +1,9 @@
 <script setup>
-  import {toggleJokeFromCollection} from "@/composables/toggleJokeFromCollection.js";
   import Heart from "@/assets/Icons/Heart.vue";
   import HeartInCollection from "@/assets/Icons/HeartInCollection.vue";
   import {onMounted, ref} from "vue";
+  import {useCollectionStore} from "@/stores/collection.js";
+  const collectionStore = useCollectionStore();
 
   defineProps({
     joke: Object,
@@ -20,7 +21,7 @@
 <template>
   <div class="single-joke-card" :class="{programming: joke?.type === 'programming'}">
     <div class="single-joke-card__head">
-      <span class="single-joke-card__collection-btn" @click="toggleJokeFromCollection(joke?.id)">
+      <span class="single-joke-card__collection-btn" @click="collectionStore.toggleJokeFromCollection(joke?.id)">
         <HeartInCollection v-if="inCollection" />
         <Heart v-else />
       </span>
