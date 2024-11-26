@@ -1,4 +1,6 @@
 <script setup>
+import {useCollectionStore} from "@/stores/collection.js";
+const collectionStore = useCollectionStore();
 </script>
 
 <template>
@@ -7,7 +9,7 @@
   </div>
   <div class="app__nav">
     <router-link to="/">Homepage</router-link>
-    <router-link to="/collection">Collection</router-link>
+    <router-link to="/collection">Collection ({{ collectionStore.collection?.length }})</router-link>
   </div>
   <router-view></router-view>
 </template>
