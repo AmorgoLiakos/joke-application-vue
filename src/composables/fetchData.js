@@ -5,6 +5,6 @@ export const fetchData = async (url) => {
         const response = await axios.get(url);
         return response.data;
     }catch(error) {
-        return error
+        return error.message;
     }
 }
