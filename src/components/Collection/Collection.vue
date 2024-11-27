@@ -23,38 +23,5 @@
 </template>
 
 <style scoped lang="scss">
-  .jokes {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .actions {
-    display: flex;
-    justify-content: center;
-    padding-block: 1.5rem;
-    &__sort-btn {
-      margin-right: 0.5rem;
-      padding: 1rem;
-      border-radius: 0.2rem;
-      background-color: transparent;
-      color: var(--grey);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      &:hover {
-        background-color: var(--grey);
-        color: var(--primary-color);
-      }
-    }
-    &__search {
-      padding: 1rem;
-      border-radius: 0.2rem;
-      outline: none;
-    }
-  }
-  .result {
-    color: var(--grey);
-  }
+  @use './collection.scss';
 </style>
