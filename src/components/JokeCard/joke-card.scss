@@ -2,8 +2,21 @@
   padding: 1rem;
   border: 1px solid var(--grey);
   border-radius: 0.5rem;
-  width: calc((100% / 4) - 3rem);
   background-color: var(--grey-dark);
+  width: 100%;
+
+  @media screen and ( min-width: 768px ) {
+    width: calc((100% / 2) - 3rem);
+  }
+
+  @media screen and ( min-width: 991px ) {
+    width: calc((100% / 3) - 3rem);
+  }
+
+  @media screen and ( min-width: 1440px ) {
+    width: calc((100% / 4) - 3rem);
+  }
+
   &.programming {
     background-color: var(--secondary-color);
   }
