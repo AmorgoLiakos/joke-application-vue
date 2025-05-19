@@ -1,4 +1,16 @@
 # joke-app-vue
+## An app where you can see some jokes using the JOKE API REPO -> https://github.com/15Dkatz/official_joke_api.
+
+### I have used: 
+#### - Vue.js composition API.
+#### - Pinia for state management.
+#### - SASS for styling
+#### - Axios for API requests
+
+### Functionalities
+#### - Toggle between random and programming jokes.
+#### - Joke collection using localStorage.
+#### - Search
 
 ## Project Setup
 
